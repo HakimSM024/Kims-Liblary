@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaksi Kims Library</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .header {
+        background: linear-gradient(to right, #003366, #004080);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .container {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 600px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .btn-beli {
+        background-color: #004080;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .btn-beli:hover {
+        background-color: #003366;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Transaksi Kims Library</div>
+
+    <div class="container">
+      <form action="#" method="post">
+        <table>
+          <tr>
+            <th>Label</th>
+            <th>Input</th>
+          </tr>
+          <tr>
+            <td>Nama:</td>
+            <td><input type="text" name="nama" required /></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td>No Telp:</td>
+            <td><input type="tel" name="notelp" required /></td>
+          </tr>
+          <tr>
+            <td>Buku:</td>
+            <td>
+              <select name="buku" required>
+                <option value="">-- Pilih Buku --</option>
+                <option value="Winnie The Poh">Winnie The Poh</option>
+                <option value="Harry Potter">Harry Potter</option>
+                <option value="Cinderella">Cinderella</option>
+                <option value="Fisika">Fisika</option>
+                <option value="Sistem Informasi Expert">Sistem Informasi Expert</option>
+                <option value="Sistem Informasi Manajemen">Sistem Informasi Manajemen</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <div style="text-align: center; margin-top: 20px">
+          <button type="submit" class="btn-beli">Beli</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
